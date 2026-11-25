@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Connecting · Fabra Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // TikTok sends the one-time login code here (TikTok requires an https redirect).
+    // Forward it as-is to the uploader running on this computer. Exchanging the code
+    // needs the client secret and PKCE verifier, which exist only on that machine.
+    location.replace("http://localhost:3077/api/tiktok/callback" + location.search);
+  </script>
+</head>
+<body>
+<main>
+  <h1>Connecting…</h1>
+  <p class="muted">Returning to Fabra Lab Uploader on this computer. If nothing happens, make sure the uploader is running.</p>
+</main>
+</body>
+</html>
